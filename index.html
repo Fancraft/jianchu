@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>智能厨房助手 — 家里有什么就吃什么</title>
+  <meta name="description" content="智能厨房助手官网：把菜谱、库存、推荐、采购串成闭环。缺什么自动列清单。适合所有想自己做饭、少浪费的人。" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600&family=Noto+Serif+SC:wght@600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header" data-reveal>
+    <a class="logo" href="#top" data-i18n="brand">智能厨房助手</a>
+    <nav class="nav" aria-label="Primary">
+      <a href="#loop" data-i18n="nav_loop">闭环</a>
+      <a href="#who" data-i18n="nav_who">适合谁</a>
+      <a href="#use" data-i18n="nav_use">怎么用上</a>
+      <a href="#demo" data-i18n="nav_demo">展会</a>
+    </nav>
+    <div class="header-actions">
+      <button type="button" class="lang-toggle" id="langToggle" aria-label="Switch language">EN</button>
+      <a class="btn btn-small" href="../pwa/" data-i18n="nav_cta">打开应用</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="hero-media" aria-hidden="true">
+        <img
+          src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=2400&q=80"
+          alt=""
+          width="2400"
+          height="1600"
+          fetchpriority="high"
+        />
+        <div class="hero-veil"></div>
+      </div>
+      <div class="hero-content" data-reveal>
+        <p class="brand" data-i18n="brand">智能厨房助手</p>
+        <h1 data-i18n="hero_title">家里有什么就吃什么，缺什么自动列清单</h1>
+        <p class="lede" data-i18n="hero_lede">这是产品官网——给所有想自己做饭、少浪费的人。真正干活的应用在单独的 PWA 里，可添加到手机主屏幕。</p>
+        <div class="hero-cta">
+          <a class="btn" href="../pwa/" data-i18n="hero_cta_primary">打开 PWA 应用</a>
+          <a class="btn btn-ghost" href="#loop" data-i18n="hero_cta_secondary">先看产品闭环</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section band" id="split" data-reveal>
+      <div class="wrap">
+        <header class="section-head">
+          <h2 data-i18n="split_title">官网 ≠ 应用</h2>
+          <p data-i18n="split_lede">两个入口，别混用。</p>
+        </header>
+        <ol class="flow">
+          <li>
+            <span class="flow-num">WEB</span>
+            <h3 data-i18n="split_web_t">本站 · website/</h3>
+            <p data-i18n="split_web_d">宣传与说明页。给非展会用户、朋友、访客浏览——不需要登录，也不能管你的冰箱。</p>
+          </li>
+          <li>
+            <span class="flow-num">PWA</span>
+            <h3 data-i18n="split_pwa_t">应用 · pwa/</h3>
+            <p data-i18n="split_pwa_d">真正的产品：库存、菜谱、推荐、周计划与购物清单。浏览器打开后可「添加到主屏幕」，像 App 一样用。</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section" id="loop">
+      <div class="wrap">
+        <header class="section-head" data-reveal>
+          <h2 data-i18n="loop_title">一条闭环，四个能力</h2>
+          <p data-i18n="loop_lede">核心不是再做一个菜谱站，而是让「家里有的」决定「今晚吃什么」。</p>
+        </header>
+        <ol class="flow" data-reveal>
+          <li>
+            <span class="flow-num">01</span>
+            <h3 data-i18n="loop_1_t">菜谱采集</h3>
+            <p data-i18n="loop_1_d">粘贴链接或文字，整理成标准菜谱；起步家常菜库。外链可收藏，不做视频解析。</p>
+          </li>
+          <li>
+            <span class="flow-num">02</span>
+            <h3 data-i18n="loop_2_t">库存管理</h3>
+            <p data-i18n="loop_2_d">数量、位置、过期日；拍照识别后确认再入库。</p>
+          </li>
+          <li>
+            <span class="flow-num">03</span>
+            <h3 data-i18n="loop_3_t">菜谱推荐</h3>
+            <p data-i18n="loop_3_d">按食材与烹饪方式筛选；标注已有 / 缺少；临期优先消耗。</p>
+          </li>
+          <li>
+            <span class="flow-num">04</span>
+            <h3 data-i18n="loop_4_t">周计划与购物清单</h3>
+            <p data-i18n="loop_4_d">待购量 = 需求 − 库存。缺什么自动列清单。</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section band" id="who" data-reveal>
+      <div class="wrap narrow">
+        <h2 data-i18n="who_title">适合谁</h2>
+        <p data-i18n="who_body">留学生、租房白领、以及任何自己开火却讨厌浪费的人——不只是展会观众。界面可中英切换；应用为单用户密码，数据在本机。</p>
+      </div>
+    </section>
+
+    <section class="section" id="use" data-reveal>
+      <div class="wrap">
+        <header class="section-head">
+          <h2 data-i18n="use_title">怎么用上 PWA</h2>
+          <p data-i18n="use_lede">应用在独立文件夹。本地或部署后用手机浏览器打开，再固定到主屏幕。</p>
+        </header>
+        <ol class="flow flow--ship">
+          <li>
+            <span class="flow-num">1</span>
+            <h3 data-i18n="use_1_t">打开应用地址</h3>
+            <p data-i18n="use_1_d">开发时：在 pwa 目录启动本地服务，手机访问电脑局域网地址。上线后：访问你部署的 HTTPS 链接。</p>
+          </li>
+          <li>
+            <span class="flow-num">2</span>
+            <h3 data-i18n="use_2_t">添加到主屏幕</h3>
+            <p data-i18n="use_2_d">iPhone 用 Safari 分享 → 添加到主屏幕；Android 用 Chrome「安装应用」。详细步骤见 pwa/README.md。</p>
+          </li>
+          <li>
+            <span class="flow-num">3</span>
+            <h3 data-i18n="use_3_t">密码进入</h3>
+            <p data-i18n="use_3_d">无公开注册。默认演示密码见应用登录页；正式使用请自行修改。</p>
+          </li>
+        </ol>
+        <p style="margin-top:1.75rem">
+          <a class="btn" href="../pwa/" data-i18n="use_cta">现在打开 PWA</a>
+        </p>
+      </div>
+    </section>
+
+    <section class="section band band--deep" id="demo" data-reveal>
+      <div class="wrap narrow">
+        <h2 data-i18n="demo_title">展会只是场景之一</h2>
+        <p data-i18n="demo_body">展会可走：扫描包装 → 入库 → 临期视图 → 分享小卡片。日常用户直接用 PWA 管冰箱与购物清单即可，不必到场。</p>
+        <a class="btn btn-on-dark" href="../pwa/" data-i18n="demo_cta">用应用体验闭环</a>
+      </div>
+    </section>
+
+    <section class="section cta-section" id="cta" data-reveal>
+      <div class="wrap narrow">
+        <p class="brand brand--cta" data-i18n="brand">智能厨房助手</p>
+        <h2 data-i18n="cta_title">先看官网，再用应用</h2>
+        <p data-i18n="cta_body">想了解产品就留在本页；想管厨房请打开 PWA。也可留下邮箱，我们发部署好的应用链接。</p>
+        <p style="margin:1.25rem 0">
+          <a class="btn" href="../pwa/" data-i18n="cta_open">打开 PWA 应用</a>
+        </p>
+        <form class="waitlist" id="waitlist" action="#" method="post">
+          <label class="sr-only" for="email" data-i18n="cta_email_label">邮箱</label>
+          <input id="email" name="email" type="email" required autocomplete="email" data-i18n-placeholder="cta_email_ph" placeholder="you@example.com" />
+          <button class="btn" type="submit" data-i18n="cta_submit">发送应用链接给我</button>
+        </form>
+        <p class="form-note" id="formNote" hidden data-i18n="cta_thanks">已记下，我们会把应用地址发到你的邮箱。</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-row">
+      <span data-i18n="brand">智能厨房助手</span>
+      <span class="muted" data-i18n="footer_tag">官网 website/ · 应用 pwa/</span>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
